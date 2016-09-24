@@ -8,7 +8,7 @@
 public class Car implements Comparable<Car> {
 	private static int nextId = 0;
 	private final int id, width, height;
-	private final boolean[] movementDirections; // up, down, left, right
+	private final boolean[] movementDirections;
 	private final String stringDirections;
 
 	private static int assignId() {
