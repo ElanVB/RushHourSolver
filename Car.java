@@ -1,3 +1,10 @@
+/**
+ * The Car class is an object that stores the given width, height 
+ * and allowed movement directions of any car in the game.
+ * 
+ * @author ElanVB
+ * @since 20-09-2016
+ */
 public class Car implements Comparable<Car> {
 	private static int nextId = 0;
 	private final int id, width, height;
