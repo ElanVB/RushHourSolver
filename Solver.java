@@ -10,18 +10,12 @@ public class Solver {
 			String filename = "test" + ((count < 10)?"0":"") + count;
 			System.out.println("Solving " + filename);
 			Board origional = new Board(filename);
-			//			System.out.println(origional);
 			ConcurrentLinkedQueue<Board> path = solve(origional);
 
 			if(path == null) {
 				System.out.println("No Solution");
 				continue;
 			}
-
-//			for(Board b : path) {
-//				System.out.println(b);
-//			}
-
 			Car.resetId();
 		}
 	}
